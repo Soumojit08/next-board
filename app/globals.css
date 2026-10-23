@@ -112,7 +112,7 @@
   }
 }
 
-/* Topographic contours (public/textures/topo.svg): Outpost's background identity, a nod to
+/* Topographic contours (public/texture/topo.svg): Outpost's background identity, a nod to
    mapping unknown territory. Opt-in per section, never over the doc or canvas editors.
    The SVG is used as a mask over a color gradient, so lines glow amber at the center and cool to grey
    at the edges; a second mask layer fades the whole map out softly. */
@@ -131,7 +131,7 @@
         oklch(0.74 0.16 55 / 0.55) 45%,
         oklch(1 0 0 / 0.45) 75%);
     mask-image:
-      url("/textures/topo.svg"),
+      url("/texture/topo.svg"),
       radial-gradient(ellipse 75% 70% at 50% 45%, black 30%, transparent 85%);
     mask-size: cover, 100% 100%;
     mask-position: center;
