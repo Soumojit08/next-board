@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import {
+  OrganizationSwitcher,
   Show,
   SignInButton,
   SignUpButton,
@@ -70,6 +71,11 @@ const SiteHeader = () => {
         </Show>
 
         <Show when="signed-in">
+          <OrganizationSwitcher
+            afterCreateOrganizationUrl="/dashboard"
+            afterSelectOrganizationUrl="/dashboard"
+          />
+
           {isLandingPage && (
             <Button asChild size="sm">
               <Link href="/dashboard">Dashboard</Link>
